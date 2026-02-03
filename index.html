@@ -392,6 +392,10 @@
             color: white;
         }
 
+        .task-checkbox.waiting {
+            border-color: var(--accent-yellow);
+        }
+
         .task-content {
             flex: 1;
         }
@@ -404,6 +408,10 @@
         .task-text.done {
             text-decoration: line-through;
             color: var(--text-secondary);
+        }
+
+        .task-text.waiting {
+            color: var(--accent-yellow);
         }
 
         .task-owner {
@@ -524,13 +532,13 @@
                         <span>Weekly Performance Dashboard</span>
                     </div>
                 </div>
-                <div class="date-badge">Jan 29, 2026</div>
+                <div class="date-badge">Feb 3, 2026</div>
             </header>
 
             <!-- Stealth Mode Callout -->
             <div class="stealth-callout">
-                <h3>🚀 Coming Out of Stealth</h3>
-                <p>Q1 2026 launch. Campaigns live across 3 verticals (PE, IB, Legal). Early signal collection phase — focus on deliverability and messaging iteration before scale.</p>
+                <h3>Coming Out of Stealth</h3>
+                <p>Q1 2026 launch. Campaigns live across 3 verticals (PE, IB, Legal). Shifting targeting from M&A keywords to specific deal teams + IR. Network mapping in progress via Crawford's LinkedIn archive.</p>
             </div>
 
             <!-- Email Section -->
@@ -542,98 +550,65 @@
 
                 <div class="cards-grid" style="margin-bottom: 1.5rem;">
                     <div class="stat-card highlight">
-                        <div class="stat-label">Total Emails Sent</div>
-                        <div class="stat-value">202</div>
-                        <div class="stat-subtext">Across 8 campaigns</div>
+                        <div class="stat-label">Active Mailboxes</div>
+                        <div class="stat-value">6</div>
+                        <div class="stat-subtext">All at 100% warmup</div>
                     </div>
                     <div class="stat-card">
-                        <div class="stat-label">Leads Contacted</div>
-                        <div class="stat-value">113</div>
-                        <div class="stat-subtext">Unique contacts reached</div>
+                        <div class="stat-label">Verified Domains</div>
+                        <div class="stat-value">2</div>
+                        <div class="stat-subtext">9 more available for expansion</div>
                     </div>
                     <div class="stat-card">
                         <div class="stat-label">Total Leads</div>
-                        <div class="stat-value">763</div>
-                        <div class="stat-subtext">Ready to sequence</div>
+                        <div class="stat-value">33K+</div>
+                        <div class="stat-subtext">Exported from Apollo</div>
                     </div>
                     <div class="stat-card">
-                        <div class="stat-label">Auto Replies</div>
-                        <div class="stat-value">2</div>
-                        <div class="stat-subtext">OOO detected</div>
+                        <div class="stat-label">Daily Capacity</div>
+                        <div class="stat-value">~90</div>
+                        <div class="stat-subtext">Target: 45-60/day ramping</div>
                     </div>
                 </div>
 
                 <table class="campaign-table">
                     <thead>
                         <tr>
-                            <th>Campaign</th>
+                            <th>Domain</th>
                             <th>Status</th>
-                            <th>Leads</th>
-                            <th>Contacted</th>
-                            <th>Sent</th>
+                            <th>Mailboxes</th>
+                            <th>Emails Sent</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td><span class="vertical-tag legal">Legal</span>Private Funds - Virgil Outbound</td>
-                            <td><span class="status-badge paused"><span class="status-dot"></span>Paused</span></td>
-                            <td>63</td>
-                            <td>22</td>
-                            <td>22</td>
+                            <td>mail.teamvirgil.co</td>
+                            <td><span class="status-badge active"><span class="status-dot"></span>Verified</span></td>
+                            <td>3</td>
+                            <td>94</td>
                         </tr>
                         <tr>
-                            <td><span class="vertical-tag legal">Legal</span>Law Firm Partners - Time Kills Deals</td>
-                            <td><span class="status-badge active"><span class="status-dot"></span>Active</span></td>
-                            <td>100</td>
-                            <td>8</td>
-                            <td>15</td>
+                            <td>send.teamvirgil.co</td>
+                            <td><span class="status-badge active"><span class="status-dot"></span>Verified</span></td>
+                            <td>3</td>
+                            <td>72</td>
                         </tr>
                         <tr>
-                            <td><span class="vertical-tag pe">PE</span>Deal Teams - Time Kills Deals</td>
-                            <td><span class="status-badge active"><span class="status-dot"></span>Active</span></td>
-                            <td>100</td>
-                            <td>15</td>
-                            <td>30</td>
+                            <td>hello.teamvirgil.co</td>
+                            <td><span class="status-badge paused"><span class="status-dot"></span>Unverified</span></td>
+                            <td>0</td>
+                            <td>-</td>
                         </tr>
                         <tr>
-                            <td><span class="vertical-tag pe">PE</span>Deal Teams - Security</td>
-                            <td><span class="status-badge active"><span class="status-dot"></span>Active</span></td>
-                            <td>100</td>
-                            <td>15</td>
-                            <td>30</td>
-                        </tr>
-                        <tr>
-                            <td><span class="vertical-tag pe">PE</span>Finance Teams - Awareness</td>
-                            <td><span class="status-badge active"><span class="status-dot"></span>Active</span></td>
-                            <td>100</td>
-                            <td>15</td>
-                            <td>30</td>
-                        </tr>
-                        <tr>
-                            <td><span class="vertical-tag ib">IB</span>M&A Teams - Time Kills Deals</td>
-                            <td><span class="status-badge active"><span class="status-dot"></span>Active</span></td>
-                            <td>100</td>
-                            <td>8</td>
-                            <td>15</td>
-                        </tr>
-                        <tr>
-                            <td><span class="vertical-tag ib">IB</span>M&A Teams - Execution Speed</td>
-                            <td><span class="status-badge active"><span class="status-dot"></span>Active</span></td>
-                            <td>100</td>
-                            <td>15</td>
-                            <td>30</td>
-                        </tr>
-                        <tr>
-                            <td><span class="vertical-tag ib">IB</span>M&A Teams - Competitive</td>
-                            <td><span class="status-badge active"><span class="status-dot"></span>Active</span></td>
-                            <td>100</td>
-                            <td>15</td>
-                            <td>30</td>
+                            <td>connect.teamvirgil.co</td>
+                            <td><span class="status-badge paused"><span class="status-dot"></span>Unverified</span></td>
+                            <td>0</td>
+                            <td>-</td>
                         </tr>
                     </tbody>
                 </table>
                 <p style="font-size: 0.75rem; color: var(--text-secondary); margin-top: 0.75rem;">
-                    ⚠️ Open/reply tracking disabled for deliverability. Check Instantly inbox for actual replies.
+                    Open/reply tracking disabled for deliverability. Check Instantly inbox for actual replies.
                 </p>
             </section>
 
@@ -641,34 +616,34 @@
             <section class="section">
                 <div class="section-header">
                     <div class="section-icon linkedin">💼</div>
-                    <h2>LinkedIn (Dripify)</h2>
+                    <h2>LinkedIn (Dripify → Prosp)</h2>
                 </div>
 
                 <div class="cards-grid" style="margin-bottom: 1.5rem;">
                     <div class="stat-card highlight" style="background: var(--gradient-3);">
-                        <div class="stat-label">Connections</div>
-                        <div class="stat-value">1,920</div>
-                        <div class="stat-subtext">Crawford Hawkins profile</div>
+                        <div class="stat-label">Status</div>
+                        <div class="stat-value" style="font-size: 1.25rem;">Paused</div>
+                        <div class="stat-subtext">Fixing targeting</div>
                     </div>
                     <div class="stat-card">
-                        <div class="stat-label">Pending Invites</div>
-                        <div class="stat-value">23</div>
-                        <div class="stat-subtext">Awaiting acceptance</div>
+                        <div class="stat-label">Issue</div>
+                        <div class="stat-value" style="font-size: 1rem;">Wrong Targets</div>
+                        <div class="stat-subtext">M&A keyword too broad</div>
                     </div>
                     <div class="stat-card">
-                        <div class="stat-label">Profile Views (7d)</div>
-                        <div class="stat-value">200</div>
-                        <div class="stat-subtext">Since last week</div>
+                        <div class="stat-label">Fix In Progress</div>
+                        <div class="stat-value" style="font-size: 1rem;">Sales Nav</div>
+                        <div class="stat-subtext">Phantom Buster scrapes</div>
                     </div>
                     <div class="stat-card">
-                        <div class="stat-label">Profile Rating</div>
-                        <div class="stat-value" style="font-size: 1.5rem;">Expert</div>
-                        <div class="stat-subtext">1 active campaign</div>
+                        <div class="stat-label">Migration</div>
+                        <div class="stat-value" style="font-size: 1rem;">Prosp</div>
+                        <div class="stat-subtext">At billing cycle end</div>
                     </div>
                 </div>
 
                 <p style="font-size: 0.75rem; color: var(--text-secondary); margin-top: 1rem;">
-                    📌 Advanced plan active. Crawford's profile running sequences to complement email outreach.
+                    📌 Current Dripify campaigns paused — catching wrong targets (business dev consultants, former M&A). Using Sales Nav + Phantom Buster for cleaner lists.
                 </p>
             </section>
 
@@ -684,53 +659,90 @@
                     <div class="task-item">
                         <div class="task-checkbox"></div>
                         <div class="task-content">
-                            <div class="task-text">Export contact lists for Crawford review + DNC integration</div>
-                            <div class="task-owner">Logan</div>
-                        </div>
-                    </div>
-                    <div class="task-item">
-                        <div class="task-checkbox"></div>
-                        <div class="task-content">
-                            <div class="task-text">Build copy variations for deal teams, finance, M&A, law firms</div>
+                            <div class="task-text">Process Crawford's LinkedIn data archive when received (enrich with Clay, categorize)</div>
                             <div class="task-owner">Logan</div>
                         </div>
                     </div>
 
-                    <div class="task-group-header">✓ Recently Completed</div>
+                    <div class="task-group-header">⏳ Waiting On Crawford</div>
+                    <div class="task-item">
+                        <div class="task-checkbox waiting"></div>
+                        <div class="task-content">
+                            <div class="task-text waiting">Export LinkedIn data archive and share for network mapping</div>
+                            <div class="task-owner">Crawford</div>
+                        </div>
+                    </div>
+                    <div class="task-item">
+                        <div class="task-checkbox waiting"></div>
+                        <div class="task-content">
+                            <div class="task-text waiting">Contact LinkedIn support to fix Sales Navigator subscription (multiple accounts error)</div>
+                            <div class="task-owner">Crawford</div>
+                        </div>
+                    </div>
+
+                    <div class="task-group-header">✓ Recently Completed (Jan 28)</div>
                     <div class="task-item">
                         <div class="task-checkbox done"></div>
                         <div class="task-content">
-                            <div class="task-text done">Set up 6 mailboxes across 2 verified domains (100% warmup)</div>
+                            <div class="task-text done">Push email + LinkedIn campaigns live</div>
                             <div class="task-owner">Logan</div>
                         </div>
                     </div>
                     <div class="task-item">
                         <div class="task-checkbox done"></div>
                         <div class="task-content">
-                            <div class="task-text done">Launch 8 campaigns across PE, IB, and Legal verticals</div>
+                            <div class="task-text done">Get DNC list from Crawford</div>
                             <div class="task-owner">Logan</div>
+                        </div>
+                    </div>
+                    <div class="task-item">
+                        <div class="task-checkbox done"></div>
+                        <div class="task-content">
+                            <div class="task-text done">Build copy variations for deal teams, finance, M&A, law firms</div>
+                            <div class="task-owner">Logan</div>
+                        </div>
+                    </div>
+                    <div class="task-item">
+                        <div class="task-checkbox done"></div>
+                        <div class="task-content">
+                            <div class="task-text done">Create targeted contact lists in Instantly + Apollo (private funds groups)</div>
+                            <div class="task-owner">Logan</div>
+                        </div>
+                    </div>
+                    <div class="task-item">
+                        <div class="task-checkbox done"></div>
+                        <div class="task-content">
+                            <div class="task-text done">Upgrade Dripify account to advanced tier</div>
+                            <div class="task-owner">Crawford</div>
                         </div>
                     </div>
 
                     <div class="task-group-header">📋 Normal Priority</div>
                     <div class="task-item">
-                        <div class="task-checkbox done"></div>
-                        <div class="task-content">
-                            <div class="task-text done">Upgrade Dripify to advanced tier for LinkedIn automation</div>
-                            <div class="task-owner">Crawford</div>
-                        </div>
-                    </div>
-                    <div class="task-item">
                         <div class="task-checkbox"></div>
                         <div class="task-content">
-                            <div class="task-text">Experiment with Boardy platform for investor meetings</div>
+                            <div class="task-text">Transition LinkedIn from Dripify → Prosp (at billing cycle end)</div>
                             <div class="task-owner">Logan</div>
                         </div>
                     </div>
                     <div class="task-item">
                         <div class="task-checkbox"></div>
                         <div class="task-content">
-                            <div class="task-text">Verify remaining 9 domains for expansion capacity</div>
+                            <div class="task-text">Set up 2FA on GoDaddy for API automation</div>
+                            <div class="task-owner">Logan + Crawford</div>
+                        </div>
+                    </div>
+                    <div class="task-item">
+                        <div class="task-checkbox"></div>
+                        <div class="task-content">
+                            <div class="task-text">Build MCP connector for GoDaddy API (auto mailbox creation/replacement)</div>
+                            <div class="task-owner">Logan</div>
+                        </div>
+                    </div>
+                    <div class="task-item">
+                        <div class="task-checkbox"></div>
+                        <div class="task-content">
+                            <div class="task-text">Experiment with Boardy platform for investor/fund meetings</div>
                             <div class="task-owner">Logan</div>
                         </div>
                     </div>
@@ -748,28 +760,31 @@
                     <div class="insight-card working">
                         <div class="insight-header">Working</div>
                         <ul class="insight-list">
-                            <li>6 mailboxes at 100% warmup on 2 domains</li>
-                            <li>8 campaigns live across 3 verticals</li>
-                            <li>Zero bounces — clean list quality</li>
-                            <li>LinkedIn active: 1,920 connections, 200 profile views/week</li>
+                            <li>6 mailboxes at 100% warmup on 2 verified domains</li>
+                            <li>166 emails sent, zero bounces — clean list quality</li>
+                            <li>33K+ leads exported from Apollo (under 5K credits)</li>
+                            <li>DNC list integrated — no duplicate outreach</li>
+                            <li>Copy variations ready for all verticals</li>
                         </ul>
                     </div>
                     <div class="insight-card watch">
                         <div class="insight-header">Watch</div>
                         <ul class="insight-list">
-                            <li>Legal firms have Mimecast — LinkedIn may be more effective</li>
-                            <li>Still in early signal collection — volume is low</li>
+                            <li>LinkedIn paused — M&A keyword catching wrong targets</li>
+                            <li>Crawford's Sales Nav blocked (multiple account error)</li>
+                            <li>Still early signal collection — low volume</li>
                             <li>Open/reply tracking disabled (deliverability tradeoff)</li>
-                            <li>Stealth mode limits messaging specificity</li>
+                            <li>Legal firms have Mimecast — LinkedIn may work better</li>
                         </ul>
                     </div>
                     <div class="insight-card next">
                         <div class="insight-header">Next</div>
                         <ul class="insight-list">
-                            <li>Scale campaigns once DNC list integrated</li>
-                            <li>Build LinkedIn sequences in Dripify</li>
+                            <li>Process Crawford's LinkedIn archive for network mapping</li>
+                            <li>Run Phantom Buster scrapes with tighter Sales Nav filters</li>
+                            <li>Increase email volume to 45-60/day</li>
+                            <li>Migrate to Prosp for LinkedIn (better API)</li>
                             <li>Verify additional domains for capacity</li>
-                            <li>Build vertical-specific case studies</li>
                         </ul>
                     </div>
                 </div>
@@ -804,6 +819,40 @@
                         <div class="stat-subtext">94 + 72 across domains</div>
                     </div>
                 </div>
+            </section>
+
+            <!-- Network Mapping Section -->
+            <section class="section">
+                <div class="section-header">
+                    <div class="section-icon" style="background: rgba(102,126,234,0.2);">🔗</div>
+                    <h2>Network Mapping (New)</h2>
+                </div>
+
+                <div class="cards-grid">
+                    <div class="stat-card">
+                        <div class="stat-label">Status</div>
+                        <div class="stat-value" style="font-size: 1.25rem;">Waiting</div>
+                        <div class="stat-subtext">Crawford exporting archive</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-label">Next Step</div>
+                        <div class="stat-value" style="font-size: 1rem;">Clay Enrich</div>
+                        <div class="stat-subtext">Categorize by relationship</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-label">Goal</div>
+                        <div class="stat-value" style="font-size: 1rem;">Warm Intros</div>
+                        <div class="stat-subtext">Via investor networks</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-label">Investors</div>
+                        <div class="stat-value" style="font-size: 1rem;">Vine + 25m</div>
+                        <div class="stat-subtext">Cross-reference partners</div>
+                    </div>
+                </div>
+                <p style="font-size: 0.75rem; color: var(--text-secondary); margin-top: 0.75rem;">
+                    Strategy: Cross-reference target list against investor networks (Vine Ventures, 25madison) for warm intro opportunities. Second-degree scraping via Phantom Buster on key contacts.
+                </p>
             </section>
 
             <footer>
