@@ -317,6 +317,11 @@
             color: var(--text-secondary);
         }
 
+        .status-badge.draft {
+            background: rgba(160, 160, 176, 0.1);
+            color: var(--text-secondary);
+        }
+
         .status-dot {
             width: 6px;
             height: 6px;
@@ -338,6 +343,7 @@
         .vertical-tag.pe { background: rgba(102, 126, 234, 0.2); color: #667eea; }
         .vertical-tag.ib { background: rgba(72, 187, 120, 0.2); color: #48bb78; }
         .vertical-tag.legal { background: rgba(212, 175, 55, 0.2); color: #d4af37; }
+        .vertical-tag.general { background: rgba(160,160,176,0.2); color: var(--text-secondary); }
 
         .task-list {
             background: var(--bg-card);
@@ -532,27 +538,138 @@
                         <span>Weekly Performance Dashboard</span>
                     </div>
                 </div>
-                <div class="date-badge">Feb 3, 2026</div>
+                <div class="date-badge">Feb 6, 2026</div>
             </header>
 
             <!-- Stealth Mode Callout -->
             <div class="stealth-callout">
                 <h3>Coming Out of Stealth</h3>
-                <p>Q1 2026 launch. Campaigns live across 3 verticals (PE, IB, Legal). Shifting targeting from M&A keywords to specific deal teams + IR. Network mapping in progress via Crawford's LinkedIn archive.</p>
+                <p>Q1 2026 launch. 1,282 emails sent across 9 campaigns (PE, IB, Legal). 1 human reply, 0 bounces. Shifting targeting from broad M&A keywords to specific deal teams + IR. Network mapping still waiting on Crawford's LinkedIn archive.</p>
             </div>
 
             <!-- Email Section -->
             <section class="section">
                 <div class="section-header">
-                    <div class="section-icon email">📧</div>
+                    <div class="section-icon email">&#x1F4E7;</div>
                     <h2>Email Campaigns (Instantly)</h2>
                 </div>
 
                 <div class="cards-grid" style="margin-bottom: 1.5rem;">
                     <div class="stat-card highlight">
+                        <div class="stat-label">Emails Sent</div>
+                        <div class="stat-value">1,282</div>
+                        <div class="stat-subtext">0 bounces, 0 unsubscribes</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-label">Leads Contacted</div>
+                        <div class="stat-value">611</div>
+                        <div class="stat-subtext">520 new leads reached</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-label">Replies</div>
+                        <div class="stat-value">1</div>
+                        <div class="stat-subtext">+ 4 auto-replies | 0.16% reply rate</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-label">Active Campaigns</div>
+                        <div class="stat-value">1 / 9</div>
+                        <div class="stat-subtext">8 paused, 19 draft</div>
+                    </div>
+                </div>
+
+                <table class="campaign-table">
+                    <thead>
+                        <tr>
+                            <th>Campaign</th>
+                            <th>Status</th>
+                            <th>Leads</th>
+                            <th>Sent</th>
+                            <th>Replies</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="vertical-tag legal">Legal</span>Legal (Private Funds) - Virgil Outbound</td>
+                            <td><span class="status-badge active"><span class="status-dot"></span>Active</span></td>
+                            <td>63</td>
+                            <td>22</td>
+                            <td>0 (2 auto)</td>
+                        </tr>
+                        <tr>
+                            <td><span class="vertical-tag legal">Legal</span>Law Firm Partners - Time Kills Deals</td>
+                            <td><span class="status-badge paused"><span class="status-dot"></span>Paused</span></td>
+                            <td>99</td>
+                            <td>90</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td><span class="vertical-tag legal">Legal</span>(google) Law Firm Partners - Time Kills Deals</td>
+                            <td><span class="status-badge paused"><span class="status-dot"></span>Paused</span></td>
+                            <td>51</td>
+                            <td>30</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td><span class="vertical-tag pe">PE</span>PE Finance Teams - Awareness</td>
+                            <td><span class="status-badge paused"><span class="status-dot"></span>Paused</span></td>
+                            <td>100</td>
+                            <td>210</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td><span class="vertical-tag pe">PE</span>PE Deal Teams - Security</td>
+                            <td><span class="status-badge paused"><span class="status-dot"></span>Paused</span></td>
+                            <td>100</td>
+                            <td>210</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td><span class="vertical-tag pe">PE</span>PE Deal Teams - Time Kills Deals</td>
+                            <td><span class="status-badge paused"><span class="status-dot"></span>Paused</span></td>
+                            <td>100</td>
+                            <td>210</td>
+                            <td>0 (1 auto)</td>
+                        </tr>
+                        <tr>
+                            <td><span class="vertical-tag ib">IB</span>IB M&amp;A Teams - Execution Speed</td>
+                            <td><span class="status-badge paused"><span class="status-dot"></span>Paused</span></td>
+                            <td>100</td>
+                            <td>210</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td><span class="vertical-tag ib">IB</span>IB M&amp;A Teams - Time Kills Deals</td>
+                            <td><span class="status-badge paused"><span class="status-dot"></span>Paused</span></td>
+                            <td>100</td>
+                            <td>90</td>
+                            <td>0 (1 auto)</td>
+                        </tr>
+                        <tr>
+                            <td><span class="vertical-tag ib">IB</span>IB M&amp;A Teams - Competitive</td>
+                            <td><span class="status-badge paused"><span class="status-dot"></span>Paused</span></td>
+                            <td>100</td>
+                            <td>210</td>
+                            <td>0</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p style="font-size: 0.75rem; color: var(--text-secondary); margin-top: 0.75rem;">
+                    Open/reply tracking disabled for deliverability. 19 additional draft campaigns ready to launch. Check Instantly inbox for actual replies.
+                </p>
+            </section>
+
+            <!-- Mailbox Infrastructure -->
+            <section class="section">
+                <div class="section-header">
+                    <div class="section-icon" style="background: rgba(160,160,176,0.2);">&#x2699;&#xFE0F;</div>
+                    <h2>Mailbox Infrastructure</h2>
+                </div>
+
+                <div class="cards-grid" style="margin-bottom: 1.5rem;">
+                    <div class="stat-card">
                         <div class="stat-label">Active Mailboxes</div>
                         <div class="stat-value">6</div>
-                        <div class="stat-subtext">All at 100% warmup</div>
+                        <div class="stat-subtext">All warming, status active</div>
                     </div>
                     <div class="stat-card">
                         <div class="stat-label">Verified Domains</div>
@@ -560,63 +677,75 @@
                         <div class="stat-subtext">9 more available for expansion</div>
                     </div>
                     <div class="stat-card">
-                        <div class="stat-label">Total Leads</div>
-                        <div class="stat-value">33K+</div>
-                        <div class="stat-subtext">Exported from Apollo</div>
-                    </div>
-                    <div class="stat-card">
                         <div class="stat-label">Daily Capacity</div>
                         <div class="stat-value">~90</div>
-                        <div class="stat-subtext">Target: 45-60/day ramping</div>
+                        <div class="stat-subtext">30/mailbox limit configured</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-label">Total Leads Available</div>
+                        <div class="stat-value">33K+</div>
+                        <div class="stat-subtext">Exported from Apollo</div>
                     </div>
                 </div>
 
                 <table class="campaign-table">
                     <thead>
                         <tr>
+                            <th>Mailbox</th>
                             <th>Domain</th>
+                            <th>Warmup</th>
                             <th>Status</th>
-                            <th>Mailboxes</th>
-                            <th>Emails Sent</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
+                            <td>crawford.hawkins@mail.teamvirgil.co</td>
                             <td>mail.teamvirgil.co</td>
-                            <td><span class="status-badge active"><span class="status-dot"></span>Verified</span></td>
-                            <td>3</td>
-                            <td>94</td>
+                            <td>Active</td>
+                            <td><span class="status-badge active"><span class="status-dot"></span>Active</span></td>
                         </tr>
                         <tr>
+                            <td>crawford@mail.teamvirgil.co</td>
+                            <td>mail.teamvirgil.co</td>
+                            <td>Active</td>
+                            <td><span class="status-badge active"><span class="status-dot"></span>Active</span></td>
+                        </tr>
+                        <tr>
+                            <td>hawkins@mail.teamvirgil.co</td>
+                            <td>mail.teamvirgil.co</td>
+                            <td>Active</td>
+                            <td><span class="status-badge active"><span class="status-dot"></span>Active</span></td>
+                        </tr>
+                        <tr>
+                            <td>crawford.hawkins@send.teamvirgil.co</td>
                             <td>send.teamvirgil.co</td>
-                            <td><span class="status-badge active"><span class="status-dot"></span>Verified</span></td>
-                            <td>3</td>
-                            <td>72</td>
+                            <td>Active</td>
+                            <td><span class="status-badge active"><span class="status-dot"></span>Active</span></td>
                         </tr>
                         <tr>
-                            <td>hello.teamvirgil.co</td>
-                            <td><span class="status-badge paused"><span class="status-dot"></span>Unverified</span></td>
-                            <td>0</td>
-                            <td>-</td>
+                            <td>crawford@send.teamvirgil.co</td>
+                            <td>send.teamvirgil.co</td>
+                            <td>Active</td>
+                            <td><span class="status-badge active"><span class="status-dot"></span>Active</span></td>
                         </tr>
                         <tr>
-                            <td>connect.teamvirgil.co</td>
-                            <td><span class="status-badge paused"><span class="status-dot"></span>Unverified</span></td>
-                            <td>0</td>
-                            <td>-</td>
+                            <td>hawkins@send.teamvirgil.co</td>
+                            <td>send.teamvirgil.co</td>
+                            <td>Active</td>
+                            <td><span class="status-badge active"><span class="status-dot"></span>Active</span></td>
                         </tr>
                     </tbody>
                 </table>
                 <p style="font-size: 0.75rem; color: var(--text-secondary); margin-top: 0.75rem;">
-                    Open/reply tracking disabled for deliverability. Check Instantly inbox for actual replies.
+                    Mission Inbox API currently experiencing SSL issues. Mailbox data from Instantly accounts API. 9 unverified domains available for expansion.
                 </p>
             </section>
 
             <!-- LinkedIn Section -->
             <section class="section">
                 <div class="section-header">
-                    <div class="section-icon linkedin">💼</div>
-                    <h2>LinkedIn (Dripify → Prosp)</h2>
+                    <div class="section-icon linkedin">&#x1F4BC;</div>
+                    <h2>LinkedIn (Dripify &rarr; Prosp)</h2>
                 </div>
 
                 <div class="cards-grid" style="margin-bottom: 1.5rem;">
@@ -628,7 +757,7 @@
                     <div class="stat-card">
                         <div class="stat-label">Issue</div>
                         <div class="stat-value" style="font-size: 1rem;">Wrong Targets</div>
-                        <div class="stat-subtext">M&A keyword too broad</div>
+                        <div class="stat-subtext">M&amp;A keyword too broad</div>
                     </div>
                     <div class="stat-card">
                         <div class="stat-label">Fix In Progress</div>
@@ -643,19 +772,19 @@
                 </div>
 
                 <p style="font-size: 0.75rem; color: var(--text-secondary); margin-top: 1rem;">
-                    📌 Current Dripify campaigns paused — catching wrong targets (business dev consultants, former M&A). Using Sales Nav + Phantom Buster for cleaner lists.
+                    Current Dripify campaigns paused - catching wrong targets (business dev consultants, former M&amp;A). Using Sales Nav + Phantom Buster for cleaner lists. Crawford's Sales Nav blocked by multiple account error - needs LinkedIn support.
                 </p>
             </section>
 
             <!-- Action Items Section -->
             <section class="section">
                 <div class="section-header">
-                    <div class="section-icon tasks">✅</div>
+                    <div class="section-icon tasks">&#x2705;</div>
                     <h2>Action Items</h2>
                 </div>
 
                 <div class="task-list">
-                    <div class="task-group-header">🔥 High Priority</div>
+                    <div class="task-group-header">High Priority</div>
                     <div class="task-item">
                         <div class="task-checkbox"></div>
                         <div class="task-content">
@@ -664,7 +793,7 @@
                         </div>
                     </div>
 
-                    <div class="task-group-header">⏳ Waiting On Crawford</div>
+                    <div class="task-group-header">Waiting On Crawford</div>
                     <div class="task-item">
                         <div class="task-checkbox waiting"></div>
                         <div class="task-content">
@@ -680,55 +809,18 @@
                         </div>
                     </div>
 
-                    <div class="task-group-header">✓ Recently Completed (Jan 28)</div>
-                    <div class="task-item">
-                        <div class="task-checkbox done"></div>
-                        <div class="task-content">
-                            <div class="task-text done">Push email + LinkedIn campaigns live</div>
-                            <div class="task-owner">Logan</div>
-                        </div>
-                    </div>
-                    <div class="task-item">
-                        <div class="task-checkbox done"></div>
-                        <div class="task-content">
-                            <div class="task-text done">Get DNC list from Crawford</div>
-                            <div class="task-owner">Logan</div>
-                        </div>
-                    </div>
-                    <div class="task-item">
-                        <div class="task-checkbox done"></div>
-                        <div class="task-content">
-                            <div class="task-text done">Build copy variations for deal teams, finance, M&A, law firms</div>
-                            <div class="task-owner">Logan</div>
-                        </div>
-                    </div>
-                    <div class="task-item">
-                        <div class="task-checkbox done"></div>
-                        <div class="task-content">
-                            <div class="task-text done">Create targeted contact lists in Instantly + Apollo (private funds groups)</div>
-                            <div class="task-owner">Logan</div>
-                        </div>
-                    </div>
-                    <div class="task-item">
-                        <div class="task-checkbox done"></div>
-                        <div class="task-content">
-                            <div class="task-text done">Upgrade Dripify account to advanced tier</div>
-                            <div class="task-owner">Crawford</div>
-                        </div>
-                    </div>
-
-                    <div class="task-group-header">📋 Normal Priority</div>
+                    <div class="task-group-header">Normal Priority</div>
                     <div class="task-item">
                         <div class="task-checkbox"></div>
                         <div class="task-content">
-                            <div class="task-text">Transition LinkedIn from Dripify → Prosp (at billing cycle end)</div>
+                            <div class="task-text">Transition LinkedIn from Dripify &rarr; Prosp (at billing cycle end), add Crawford as user</div>
                             <div class="task-owner">Logan</div>
                         </div>
                     </div>
                     <div class="task-item">
                         <div class="task-checkbox"></div>
                         <div class="task-content">
-                            <div class="task-text">Set up 2FA on GoDaddy for API automation</div>
+                            <div class="task-text">Set up 2FA on GoDaddy for API automation (do on next call)</div>
                             <div class="task-owner">Logan + Crawford</div>
                         </div>
                     </div>
@@ -746,13 +838,85 @@
                             <div class="task-owner">Logan</div>
                         </div>
                     </div>
+                    <div class="task-item">
+                        <div class="task-checkbox"></div>
+                        <div class="task-content">
+                            <div class="task-text">X/Twitter outreach launch via Inboxes app (after email stabilizes)</div>
+                            <div class="task-owner">Logan</div>
+                        </div>
+                    </div>
+                    <div class="task-item">
+                        <div class="task-checkbox"></div>
+                        <div class="task-content">
+                            <div class="task-text">Build ABM campaigns using Claude for research + personalized copy</div>
+                            <div class="task-owner">Logan</div>
+                        </div>
+                    </div>
+
+                    <div class="task-group-header">Recently Completed (Jan 28)</div>
+                    <div class="task-item">
+                        <div class="task-checkbox done"></div>
+                        <div class="task-content">
+                            <div class="task-text done">Push email + LinkedIn campaigns live</div>
+                            <div class="task-owner">Logan</div>
+                        </div>
+                    </div>
+                    <div class="task-item">
+                        <div class="task-checkbox done"></div>
+                        <div class="task-content">
+                            <div class="task-text done">Get DNC list from Crawford</div>
+                            <div class="task-owner">Logan</div>
+                        </div>
+                    </div>
+                    <div class="task-item">
+                        <div class="task-checkbox done"></div>
+                        <div class="task-content">
+                            <div class="task-text done">Build copy variations for deal teams, finance, M&amp;A, law firms</div>
+                            <div class="task-owner">Logan</div>
+                        </div>
+                    </div>
+                    <div class="task-item">
+                        <div class="task-checkbox done"></div>
+                        <div class="task-content">
+                            <div class="task-text done">Create targeted contact lists in Instantly + Apollo (private funds groups)</div>
+                            <div class="task-owner">Logan</div>
+                        </div>
+                    </div>
+                    <div class="task-item">
+                        <div class="task-checkbox done"></div>
+                        <div class="task-content">
+                            <div class="task-text done">Upgrade Dripify account to advanced tier</div>
+                            <div class="task-owner">Crawford</div>
+                        </div>
+                    </div>
+                    <div class="task-item">
+                        <div class="task-checkbox done"></div>
+                        <div class="task-content">
+                            <div class="task-text done">Export and share initial legal contact lists for Crawford review</div>
+                            <div class="task-owner">Logan</div>
+                        </div>
+                    </div>
+                    <div class="task-item">
+                        <div class="task-checkbox done"></div>
+                        <div class="task-content">
+                            <div class="task-text done">Research job titles for targeting asset managers within law firms</div>
+                            <div class="task-owner">Logan</div>
+                        </div>
+                    </div>
+                    <div class="task-item">
+                        <div class="task-checkbox done"></div>
+                        <div class="task-content">
+                            <div class="task-text done">Develop case studies for each vertical</div>
+                            <div class="task-owner">Logan</div>
+                        </div>
+                    </div>
                 </div>
             </section>
 
             <!-- Insights Section -->
             <section class="section">
                 <div class="section-header">
-                    <div class="section-icon insights">💡</div>
+                    <div class="section-icon insights">&#x1F4A1;</div>
                     <h2>Insights</h2>
                 </div>
 
@@ -760,63 +924,32 @@
                     <div class="insight-card working">
                         <div class="insight-header">Working</div>
                         <ul class="insight-list">
-                            <li>6 mailboxes at 100% warmup on 2 verified domains</li>
-                            <li>166 emails sent, zero bounces — clean list quality</li>
-                            <li>33K+ leads exported from Apollo (under 5K credits)</li>
-                            <li>DNC list integrated — no duplicate outreach</li>
-                            <li>Copy variations ready for all verticals</li>
+                            <li>1,282 emails sent with zero bounces - list quality is clean</li>
+                            <li>6 mailboxes active and warming across 2 verified domains</li>
+                            <li>Law firm campaigns generating signal - 1 human reply from 120 sends</li>
+                            <li>19 draft campaigns ready to activate for volume ramp</li>
+                            <li>Copy variations tested across PE, IB, and Legal verticals</li>
                         </ul>
                     </div>
                     <div class="insight-card watch">
                         <div class="insight-header">Watch</div>
                         <ul class="insight-list">
-                            <li>LinkedIn paused — M&A keyword catching wrong targets</li>
-                            <li>Crawford's Sales Nav blocked (multiple account error)</li>
-                            <li>Still early signal collection — low volume</li>
-                            <li>Open/reply tracking disabled (deliverability tradeoff)</li>
-                            <li>Legal firms have Mimecast — LinkedIn may work better</li>
+                            <li>Reply rate at 0.16% - below 1% baseline target</li>
+                            <li>8 of 9 live campaigns now paused - need reactivation plan</li>
+                            <li>LinkedIn still stalled - Crawford's Sales Nav blocked</li>
+                            <li>Open/reply tracking disabled - limited visibility on engagement</li>
+                            <li>Mission Inbox + Prosp APIs down (SSL errors) - infrastructure monitoring gap</li>
                         </ul>
                     </div>
                     <div class="insight-card next">
                         <div class="insight-header">Next</div>
                         <ul class="insight-list">
-                            <li>Process Crawford's LinkedIn archive for network mapping</li>
-                            <li>Run Phantom Buster scrapes with tighter Sales Nav filters</li>
-                            <li>Increase email volume to 45-60/day</li>
-                            <li>Migrate to Prosp for LinkedIn (better API)</li>
-                            <li>Verify additional domains for capacity</li>
+                            <li>Reactivate paused campaigns or launch draft campaigns to increase volume</li>
+                            <li>Process Crawford's LinkedIn archive for network mapping + warm intros</li>
+                            <li>Migrate LinkedIn from Dripify to Prosp at billing cycle end</li>
+                            <li>Verify additional domains to expand mailbox capacity</li>
+                            <li>Test ABM approach - AI-personalized research per account</li>
                         </ul>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Infrastructure Section -->
-            <section class="section">
-                <div class="section-header">
-                    <div class="section-icon" style="background: rgba(160,160,176,0.2);">⚙️</div>
-                    <h2>Infrastructure Status</h2>
-                </div>
-
-                <div class="cards-grid">
-                    <div class="stat-card">
-                        <div class="stat-label">Active Mailboxes</div>
-                        <div class="stat-value">6</div>
-                        <div class="stat-subtext">All at 100% warmup</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-label">Verified Domains</div>
-                        <div class="stat-value">2</div>
-                        <div class="stat-subtext">9 more available</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-label">Daily Send Capacity</div>
-                        <div class="stat-value">~90</div>
-                        <div class="stat-subtext">15/mailbox average</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-label">Emails Sent (Total)</div>
-                        <div class="stat-value">166</div>
-                        <div class="stat-subtext">94 + 72 across domains</div>
                     </div>
                 </div>
             </section>
@@ -824,8 +957,8 @@
             <!-- Network Mapping Section -->
             <section class="section">
                 <div class="section-header">
-                    <div class="section-icon" style="background: rgba(102,126,234,0.2);">🔗</div>
-                    <h2>Network Mapping (New)</h2>
+                    <div class="section-icon" style="background: rgba(102,126,234,0.2);">&#x1F517;</div>
+                    <h2>Network Mapping</h2>
                 </div>
 
                 <div class="cards-grid">
@@ -856,7 +989,7 @@
             </section>
 
             <footer>
-                <p>Generated by Claude Code • 2108 Ventures × Virgil.ai</p>
+                <p>Generated by Claude Code &bull; 2108 Ventures &times; Virgil.ai</p>
             </footer>
         </div>
     </div>
